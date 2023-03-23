@@ -3,26 +3,27 @@ import styled from 'styled-components'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
-function Veggie() {
 
-  const [veggie, setVeggie] = useState([])
+function Dessert() {
+
+  const [dessert, setDessert] = useState([])
 
   useEffect(() => {
-    getVeggie()
+    getDessert()
   },[])
 
-  const getVeggie = async () => {
+  const getDessert = async () => {
 
-    const check = localStorage.getItem('veggie')
+    const check = localStorage.getItem('dessert')
 
     if(check){
-      setVeggie(JSON.parse(check))
+      setDessert(JSON.parse(check))
     }else{
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12&tags=vegetarian`)
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12&tags=dessert`)
       const data = await api.json()
 
-      localStorage.setItem('veggie', JSON.stringify(data.recipes))
-      setVeggie(data.recipes)
+      localStorage.setItem('dessert', JSON.stringify(data.recipes))
+      setDessert(data.recipes)
       console.log(data)
     }
   }
@@ -30,7 +31,7 @@ function Veggie() {
   return (
     <div>
          <Wrapper>
-          <h3>Vegetarian Recipes</h3>
+          <h3>Dessert Recipes</h3>
           <Splide options={{
             perPage: 4, 
             arrows: false,
@@ -39,7 +40,7 @@ function Veggie() {
             gap: '5rem',
 
           }}>
-          {veggie.map((recipe) => {
+          {dessert.map((recipe) => {
             return(
               <SplideSlide key={recipe.id}>
               <Card>
@@ -107,4 +108,4 @@ const Gradient = styled.div`
 
 `
 
-export default Veggie
+export default Dessert
