@@ -60,9 +60,7 @@ function Veggie() {
 const Wrapper = styled.div`
   margin: 4rem 0rem;
 
-  h3{
-    padding-bottom: 1rem;
-  }
+  
 
 `;
 
@@ -71,6 +69,7 @@ const Card = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 
 
   img{
