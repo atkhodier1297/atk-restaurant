@@ -36,7 +36,7 @@ function Veggie() {
             arrows: false,
             pagination: false,
             drag: 'free',
-            gap: '5rem',
+            gap: '1rem',
 
           }}>
           {veggie.map((recipe) => {
@@ -66,7 +66,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
+  min-height: 12rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;

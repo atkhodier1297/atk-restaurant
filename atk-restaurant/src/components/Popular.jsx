@@ -37,7 +37,10 @@ function Popular() {
             arrows: false,
             pagination: false,
             drag: 'free',
-            gap: '5rem',
+            gap: '1rem',
+            autoplay: true,
+            autoplaySpeed: 1500,
+            type: 'loop',
 
           }}>
           {popular.map((recipe) => {
@@ -58,7 +61,7 @@ function Popular() {
 }
 
 const Wrapper = styled.div`
-  margin: 4rem 0rem;
+  margin: 6rem 0rem;
 
   h3{
     padding-bottom: 1rem;
@@ -67,7 +70,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
+  min-height: 12rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -79,7 +82,7 @@ const Card = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover
   }
   p{
     position: absolute;
