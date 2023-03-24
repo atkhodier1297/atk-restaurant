@@ -33,10 +33,11 @@ function Veggie() {
           <h3>Vegetarian Recipes</h3>
           <Splide options={{
             perPage: 4, 
-            arrows: false,
+            arrows: true,
             pagination: false,
             drag: 'free',
             gap: '1rem',
+            type: 'loop',
 
           }}>
           {veggie.map((recipe) => {
