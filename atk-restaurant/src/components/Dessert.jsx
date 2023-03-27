@@ -24,7 +24,7 @@ function Dessert() {
 
       localStorage.setItem('dessert', JSON.stringify(data.recipes))
       setDessert(data.recipes)
-      console.log(data)
+      //console.log(data)
     }
   }
 

@@ -23,7 +23,7 @@ function Veggie() {
 
       localStorage.setItem('veggie', JSON.stringify(data.recipes))
       setVeggie(data.recipes)
-      console.log(data)
+      //console.log(data)
     }
   }
 
