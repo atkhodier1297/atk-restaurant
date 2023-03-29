@@ -15,7 +15,7 @@ function Recipe() {
 
   useEffect(() => {
     fetchDetails()
-},[params.name])
+}, [params.name])
 
   return (
     <DetailWrapper>
@@ -31,7 +31,7 @@ function Recipe() {
   )
 }
 
-const DetailWrapper = styled.DetailWrapper`
+const DetailWrapper = styled.div`
   margin-top: 10rem;
   margin-bottom: 5rem;
   display: flex;
@@ -59,7 +59,7 @@ const Button = styled.button`
   margin-right: 2rem;
   font-weight: 600;
 `
-const Info = styled.DetailWrapper`
+const Info = styled.div`
   margin-left: 10rem;
 `
 

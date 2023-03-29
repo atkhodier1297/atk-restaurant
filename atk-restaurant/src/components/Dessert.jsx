@@ -39,7 +39,6 @@ function Dessert() {
             pagination: false,
             drag: 'free',
             gap: '1rem',
-            type: 'loop',
 
           }}>
           {dessert.map((recipe) => {

@@ -41,7 +41,6 @@ function Popular() {
             gap: '1rem',
             autoplay: true,
             autoplaySpeed: 1500,
-            type: 'loop',
 
           }}>
           {popular.map((recipe) => {
