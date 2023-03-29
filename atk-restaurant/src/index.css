@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0% 5%;
-  background-color: lightgray;
+  background-color: #35683e;
 }
 
 code {
@@ -23,12 +23,12 @@ code {
 
 h4 {
   font-size: 1rem;
-  color: gray;
+  color: #C8B282;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: red;
+  color: #C8B282;
   line-height: 2.5rem;
   margin: 2rem 0rem;
 }
