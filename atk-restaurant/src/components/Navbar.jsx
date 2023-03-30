@@ -6,9 +6,13 @@ import { GiKnifeFork } from 'react-icons/gi'
 function Navbar() {
   return (
       <Nav>
-        <GiKnifeFork/>
+        
         <Logo to={"/"}>
-        <h3>Delicious Recipes</h3>
+        <h3>
+          <GiKnifeFork/>
+          Delicious Recipes
+          <GiKnifeFork/>
+          </h3>
         </Logo>
       </Nav>
   )
@@ -28,7 +32,7 @@ const Nav = styled.div`
     font-size: 2rem;
   }
   h3{
-    padding-left: 1rem;
+    
   }
 `
 
